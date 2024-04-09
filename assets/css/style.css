@@ -1,10 +1,60 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: system-ui;
 }
 body header {
   display: flex;
   flex-direction: column;
+  justify-content: space;
+  align-items: center;
+  background: #8f8f8f;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+body header h1,
+body header h2 {
+  color: #fff;
+}
+body header h1 {
+  margin: 5px 0;
+}
+body header h2 {
+  margin: 2px 0;
+}
+body section {
+  background: #fefefe;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+body section h2 {
+  align-self: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 12px;
+}
+body section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 60px;
+  width: 50%;
+  height: 40vh;
+  border: 5px solid #000;
+  border-radius: 20px;
+}
+body section form div {
+  display: flex;
+  justify-content: space-between;
+}
+body section form div label {
+  flex-grow: 1;
+  width: 10vw;
+}
+body section form div input {
+  flex-grow: 1;
+}
+body section form div textarea {
+  flex-grow: 1;
 }

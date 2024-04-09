@@ -5,15 +5,16 @@ body {
 }
 body header {
   display: flex;
-  flex-direction: column;
-  justify-content: space;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
   background: #8f8f8f;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  padding: 10px 0;
+  box-shadow: 0px 2px 2px 2px #333123;
 }
 body header h1,
 body header h2 {
-  color: #fff;
+  color: #ffebeb;
 }
 body header h1 {
   margin: 5px 0;
@@ -25,7 +26,7 @@ body section {
   background: #fefefe;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 40px 0;
 }
 body section h2 {
   align-self: center;
@@ -36,25 +37,32 @@ body section h2 {
 }
 body section form {
   display: flex;
+  margin: 20px 60px;
+  width: 40vw;
+  height: 40vh;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid #333;
   padding: 20px 60px;
-  width: 50%;
-  height: 40vh;
-  border: 5px solid #000;
-  border-radius: 20px;
+  border-radius: 12px;
+  background: #d0d0d0;
 }
 body section form div {
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 body section form div label {
   flex-grow: 1;
   width: 10vw;
 }
-body section form div input {
-  flex-grow: 1;
-}
+body section form div input,
 body section form div textarea {
   flex-grow: 1;
+}
+body section form div input[type=submit] {
+  padding: 10px 0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
